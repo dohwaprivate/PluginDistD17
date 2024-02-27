@@ -11,6 +11,6 @@ jobs:
     runs-on: windows-2019
     steps:
       - name: clear web services cache
-        run: curl -x post --fail https://xlwebservices-fastapi.onrender.com/plugin/clearcache?key=$env:cache_clear_key
+        run: curl -x post --fail https://xivpf.xyz/plugin/clearcache?key=$env:cache_clear_key
         env:
           cache_clear_key: ${{ secrets.CACHE_CLEAR_KEY }}
